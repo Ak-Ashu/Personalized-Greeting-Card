@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Greeting.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="heading"><i class="fas fa-envelope"></i> <span class="typing">Personalized Greeting Card</span></h1>
+
+        <form id="cardForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="occasion" placeholder="Occasion (e.g. Birthday)" required />
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Generate Card</button>
+        </form>
+
+        <div id="card"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="Greeting.js"></script>
+    </main>
+</body>
+
+</html>
